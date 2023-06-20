@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="desarrollador, diseñador, web, programador, html, css, js, python">
+    <title>Lautaro Perez | Portafolio</title>
+    <link rel="stylesheet" href="portafolio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Moirai+One&family=Oxygen:wght@300&family=Roboto+Slab&family=Rock+3D&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="effectOpacity">
+            <div class="headerContent">
+                <div class="headerText">
+                    <h1>LAUTARO PEREZ</h1>
+                    <p> Explorá mi portafolio y descubrí cómo puedo transformar tu idea en sitios web modernos y funcionales. Desde diseños hasta en una navegación fluida y óptima</p>
+                </div>
+                <div class="headerButtons">
+                    <a href="#work" class="headerButtonWork">Trabajos</a>
+                    <a href="#contact" class="headerButtonContact">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="skew-abajo"></div>
+
+        <section class="aboutMe">
+            <div class="containerContent">
+                <div class="aboutMeHead">
+                    <h2>SOBRE MI</h2>
+                    <img src="./images/yoPeritoMoreno.jpg">
+                </div>
+                <div class="aboutMeMain">
+                    <p>
+                        Soy un desarrollador web con experiencia en la creación de sitios atractivos y funcionales.<br>
+                        Como programador autodidacta, me he especializado en las tecnologías<br>
+                        HTML, CSS, JS, Python y SQL. <br>
+                        Aunque me considero un profesional junior, no subestimo mi capacidad para entregar resultados de calidad.<br>
+                    </p>
+                    <div class="aboutMeContainerButton">
+
+                        <button class="button" onclick="mostrarTexto()">
+                            SEGUIR LEYENDO
+                        </button>
+
+                    </div>
+                    <p> <br>
+                        <span id="texto-desplegable" class="oculto">Mi enfoque principal es crear experiencias digitales que sean intuitivas, atractivas y eficientes.<br>
+                        Mi capacidad para traducir diseños en código funcional me permite ofrecer soluciones personalizadas y adaptadas a las necesidades de mis clientes.<br>
+                        Siempre me esfuerzo por mantenerme actualizado con las últimas tendencias y tecnologías en el mundo del desarrollo web, para asegurarme de brindar resultados modernos y de calidad.<br></span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="skew-arriba"></div>
+
+        <section class="myWork" id="work">
+            <div class="containerContent">
+                <h2>MIS TRABAJOS</h2>
+                <p>A lo largo de mi carrera, he creado una variedad de proyectos que demuestran mis habilidades y experiencia en HTML, CSS, JS, Python y SQL. Estos proyectos incluyen sitios web interactivos, aplicaciones personalizadas y soluciones de comercio electrónico.</p>
+                <div class="myWorkImgs">
+                    <img src="./images/mts mywork.jfif" alt="trabajo de Lautaro Perez">
+                    <img src="./images/mts2 mywork.jfif" alt="trabajo de Lautaro Perez">
+                    <img src="./images/ryj mywork.jfif" alt="trabajo de Lautaro Perez">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="general_container" id="form_container">
+                <div class="contact-container">
+                    <h2>Contacto</h2>
+    
+                    <form action="./formulario.php" method="POST">
+                      <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                      <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                      <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+    
+                      <input type="submit" value="Enviar">
+                    </form>
+                  </div>
+          
+                  <div class="info-container">
+                    <h2>Información de contacto</h2>
+                    <p>Whatsapp: +54 9 11 6815-5673</p>
+                    <p>Correo electrónico: lautaroperezga@gmail.com</p>
+                    <p>Github: </p>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="portafolio.js"></script>
+</body>
+</html>
