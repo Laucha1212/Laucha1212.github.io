@@ -4,6 +4,6 @@ function mostrarTexto() {
     texto.classList.toggle("oculto");
 
     //NO FUNCIONA
-    let button = document.getElementsByClassName("btn-neon");
+    let button = document.getElementsById("buttonAboutMe");
     button.classList.toggle("oculto");
-  }
+}
