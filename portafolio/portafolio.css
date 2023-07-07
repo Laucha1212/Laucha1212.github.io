@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
 }
 :root{
     --blue: rgb(1 30 254);
-    --textShadowTITLES: 6px 6px 6px rgb(11 63 231), 4px 4px 4px rgb(17 42 152);
+    --textShadowTITLES: 3px 4px 3px rgb(0 47 255), 6px 6px 6px rgb(11 63 231);
     --red: #dc1c2f;
     --grey: rgb(30,48,80);
     --green: #008e0e;
@@ -46,7 +47,7 @@
     width: 90%;
     margin: 0 auto;
 }
-/*header*/
+/**********************************************header*************************************/
 header{
     height: 100vh;
     background-image: url(../imagenes\ genericas\ programacion/codigo\ 01.jpg);
@@ -65,7 +66,7 @@ header{
 }
 .headerContent{
     width: 90%;
-    padding-left: 5vw;
+    padding-left: 2vw;
     color: #fff;
     margin: 0 auto 75px;
 }
@@ -73,9 +74,7 @@ header{
     font-family: 'Moirai One', cursive;
     font-weight: 600;
     font-size: 45px;
-    /*text-shadow: 2px 2px 2px rgb(255, 0, 0);*/
-    text-shadow: 6px 6px 6px rgb(11 63 231),
-                4px 4px 4px rgb(17 42 152);
+    text-shadow: 7px 6px 4px rgb(255, 0, 0), 3px 4px 2px rgb(11 63 231);
     letter-spacing: 1px;
     /*color: #0044ff;*/
     color: #6d7bff;
@@ -97,23 +96,18 @@ header{
 .headerButtons a{
     padding: 12px 11%;
     border-radius: 5px;
-    color: red;
+    color: rgb(255 255 255);
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
-    box-shadow: inset -1px 0px 4px 0px rgb(231 11 11), 2px 3px 2.5px rgb(255 0 0);
-    text-shadow: 2px 2px 4px #ff3434;
+    box-shadow: inset 1px 1px 7px rgb(1 30 254), 4px 4px 7px 1px rgb(176 0 0);
+    text-shadow: 3px 2px 2px rgb(0 38 211), 4px 3px 2px rgb(255 0 0);
+    -webkit-text-stroke: 0.3px #1400ff;
 }
-/** GRADIENT **/
-.gradient{
-    background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,0.9922093837535014) 7%, rgb(11 12 12) 100%, rgba(61,61,61,1) 100%);
-height: 10vh;
-}
-/**MAIN**/
+/***********************************MAIN********************************************/
 main{
     background-color: rgb(11 12 12);
 }
-/**ABOUT ME**/
+/**************************************************ABOUT ME******************************/
 .aboutMe .aboutMeHead{
     margin: 10px auto;
     width: 90%;
@@ -143,6 +137,49 @@ main{
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
 }
+.aboutMe .aboutMeMain h3{
+    text-align: center;
+    color: #fff;
+    margin:50px 0 10px;
+}
+.aboutMe .aboutMeMain hr{
+    width: 90%;
+    margin: 0 auto 10px;
+}
+.containerKnowledgeIcons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}.containerKnowledgeIcons svg{
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}#svgHTML{
+    fill: red;
+    filter:drop-shadow(2px 3px 2px #0033ff);
+}#svgCSS{
+    fill: blue;
+    filter:drop-shadow(2px 3px 2px #ff0000);
+}#svgJS{
+    fill: yellow;
+    filter:drop-shadow(2px 3px 2px #0033ff);
+}#svgPY{
+    fill: violet;
+    filter:drop-shadow(2px 3px 2px #0033ff);
+}#svgSQL{
+    fill: white;
+    filter:drop-shadow(2px 3px 2px #ff0000);
+}#svgGIT{
+    fill: orange;
+    filter:drop-shadow(2px 3px 2px #0033ff);
+}
+    
+.containerKnowledgeIcons-p{
+    font-size: 10px !important;
+    text-align: center;
+}
+/********************/
 .aboutMeContainerButton{
     display: flex;
     justify-content: center;
@@ -187,7 +224,7 @@ main{
 }
 .myWorkImgs{
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
 }
 .myWorkImgs img{
     width: 90%;
@@ -197,7 +234,7 @@ main{
     border: 1px solid rgba(255, 0, 0, 0.4);
 }
 
-/*contacto*/
+/**************************************************contacto*********************************/
 #contact{
     background-color: #bcbbbb;
     padding: 20px 0;
@@ -216,7 +253,7 @@ main{
 }
 .formContact{
     background-color: #000;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
 }
 .formContactContent{
     margin: 10px 5px;
@@ -245,9 +282,9 @@ main{
 }
 #sendForm{
     outline: none;
-    width: 20em;
+    width: 19em;
     height: 45px;
-    margin: 15px 6%;
+    margin: 15px auto;
     text-align: center;
     border-radius: 40px;
     background-color: transparent;
@@ -277,12 +314,35 @@ main{
 .formMyInfoITEM{
     display: flex;
     align-items: center;
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #000;
+}
+.formMyInfoContent a{
+    text-decoration: none;
 }
 .formMyInfoContent p{
     display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
 }
-.formMyInfoContent img{
-    width: 20px;
-    margin: 0 6px 0 0;
+.formMyInfoContent svg{
+    width: 25px;
+    margin: 0 10px 0 0;
     display: inline-block;
+}#svgMAIL{
+    fill: #fff;
+}#svgWSP{
+    fill: #fff;
+}#svgGITHUB{
+    fill: #fff;
+}#svgLINKEDIN{
+    fill: #fff;
 }
+
+
+
+/***********************************RESPONSIVE***************************************/
