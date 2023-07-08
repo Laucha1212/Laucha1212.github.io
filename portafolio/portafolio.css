@@ -86,6 +86,7 @@ header{
     color: #fff;
     font-size: 17px;
     font-family: 'Oxygen', sans-serif;
+    font-weight: bolder;
 }
 .headerButtons{
     display: flex;
@@ -98,6 +99,7 @@ header{
     border-radius: 5px;
     color: rgb(255 255 255);
     text-decoration: none;
+    text-align: center;
     font-family: 'Roboto Slab', serif;
     box-shadow: inset 1px 1px 7px rgb(1 30 254), 4px 4px 7px 1px rgb(176 0 0);
     text-shadow: 3px 2px 2px rgb(0 38 211), 4px 3px 2px rgb(255 0 0);
@@ -240,27 +242,30 @@ main{
     padding: 20px 0;
 }
 .contactContainer{
-    border: 2px solid #9ebe29;
     border-radius: 20px;
     width: 90%;
     margin: 0 auto;
     background-color: #000;
+    border-radius: 20px 20px 0 0;
 }
+
+/*formulrio*/
 .form{
     display: grid;
     grid-template-columns: 1fr; /*responsive*/
-    font-family: 'Oxygen', sans-serif;
 }
-.formContact{
+
+/*seccion de formulario*/
+/*.formContact{
     background-color: #000;
     border-radius: 20px 20px 0 0;
-}
+}*/
 .formContactContent{
     margin: 10px 5px;
     padding: 17px;
 }
 .formContactContent label{
-    color: var(--green);
+    color: #fff;
     font-size: 18px;
 }
 .formContactContent input,.formContactContent textarea{
@@ -300,17 +305,19 @@ main{
     background-color: var(--green);
     color: #fff;
 }
+
+/*seccion de mis datos de contacto*/
 .formMyInfo{
-    color: #000;
-    font-weight: bold;
-    background-color: var(--green);
-    border-radius: 0 0 20px 20px;
+    background-color: #000;
+    border-radius: 20px;
     padding: 17px;
 }
 .formMyInfoContent{
     width: 93%;
     margin: 0 auto;
 }
+
+/*estilo global de cada una de las cajas de los botones*/
 .formMyInfoITEM{
     display: flex;
     align-items: center;
@@ -329,11 +336,15 @@ main{
     width: 100%;
     color: #fff;
 }
+
+/*iconos de botones de contacto*/
 .formMyInfoContent svg{
     width: 25px;
     margin: 0 10px 0 0;
     display: inline-block;
-}#svgMAIL{
+    fill: #fff;
+}
+/*#svgMAIL{
     fill: #fff;
 }#svgWSP{
     fill: #fff;
@@ -341,8 +352,147 @@ main{
     fill: #fff;
 }#svgLINKEDIN{
     fill: #fff;
+}*/
+
+/*estilos INDIVIDUALES de cada color de los contenedores de botones de contacto*/
+#a-MAIL{
+    background-color: #ff0000;
+}#a-WSP{
+    background-color: #008e0e;
+}#a-LINKEDIN{
+    background-color:#0033ff;
 }
 
 
 
 /***********************************RESPONSIVE***************************************/
+@media (min-width:360px){
+    .headerContent{
+        padding-left: 6vw;
+        margin: 0 auto 90px;
+    }
+    .headerButtons{
+        justify-content: space-evenly;
+        width: 100%;
+    }.headerButtons a{
+        width: 45%;
+    }
+}
+@media (min-width:400px){
+    .containerContent{
+        width: 90%;
+    }
+    .containerKnowledgeIcons svg{
+        height: 60px;
+    }
+}
+@media (min-width:500px){
+    .containerKnowledgeIcons{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .headerContent{
+        width: 80%;
+    }
+    .contactContainer{
+        width: 80%;
+    }
+}
+@media (min-width:570px) {
+    .headerContent{
+        width: 75%;
+    }
+    .headerText p{
+        margin: 10px 0;
+    }
+    .myWorkImgs img{
+        width: 80%;
+    }
+}
+@media (min-width:700px) {
+    .headerContent{
+        width: 50%;
+        padding-left: 0vw;
+    }
+    .headerText p{
+        margin: 10px 0;
+    }
+    .headerText p{
+        margin: 15px 0;
+    }
+    .headerButtons{
+        justify-content: space-between;
+    }
+    .aboutMe .aboutMeMain p{
+        text-align: center;
+    }
+    .containerKnowledgeIcons{
+        width: 70%;
+    }
+    .myWorkImgs img{
+        width: 70%;
+    }
+    .contactContainer{
+        width: 70%;
+    }
+}
+@media (min-width:800px){
+    .headerContent{
+        width: 50%;
+    }
+    .containerContent{
+        width: 75%;
+    }
+    .aboutMe .aboutMeHead img{
+        height: 80px;
+        width: 80px;
+    }
+    .contactContainer{
+        width: 90%;
+    }
+    .form{
+        grid-template-columns: 2fr 1fr;
+    }
+    #a-MAIL p{
+        font-size: 11px;
+    }
+    .formMyInfoContent{
+        height: 100%;
+    }
+    .formMyInfoITEM{
+        margin: 5px auto;
+    }
+}
+@media (min-width:900px){
+    .headerContent{
+        margin: 0 auto 75px 150px;
+    }
+    .effectOpacity{
+        justify-content: left;
+    }
+    .containerKnowledgeIcons{
+        width: 70%;
+    }
+    .containerKnowledgeIcons svg{
+        height: 75px;
+    }
+}
+@media (min-width:1050px){
+    .headerContent{
+        width: 40%;
+        margin: 0 auto 75px 200px;
+    }
+    .contactContainer{
+        width: 85%;
+    }
+}
+@media (min-width:1200px){
+    .headerContent{
+        width: 38%;
+        margin: 0 auto 75px 250px;
+    }
+    .aboutMe .aboutMeHead img{
+        height: 100px;
+        width: 100px;
+    }
+}
