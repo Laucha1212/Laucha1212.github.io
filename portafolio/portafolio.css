@@ -4,9 +4,12 @@
     box-sizing: border-box;
     font-family: 'Oxygen', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
 :root{
     --blue: rgb(1 30 254);
-    --textShadowTITLES: 3px 4px 3px rgb(0 47 255), 6px 6px 6px rgb(11 63 231); 
+    --textShadowTITLES: 2px 4px 1px rgb(0 47 255), 6px 6px 6px rgb(11 63 231);
     --red: #dc1c2f;
     --grey: rgb(30,48,80);
     --green: #008e0e;
@@ -22,6 +25,7 @@
     position: relative;
     bottom: 10vh;
     left: 0;
+    width: 100%;
     border-width: 0 0 10vh 100vw;
     border-style: solid;
     border-color: transparent transparent rgb(11 12 12) transparent;
@@ -30,6 +34,7 @@
     position: relative;
     top: 10vh;
     left: 0;
+    width: 100%;
     border-width: 10vh 100vw 0 0;
     border-style: solid;
     border-color: rgb(11 12 12) transparent transparent transparent;
@@ -64,6 +69,16 @@ header{
     justify-content: center;
     align-items: end;
 }
+.effectOpacityButtons{
+    background-color: rgba(0, 0, 0, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    border-radius: 5PX;
+    padding: 12px 11%;
+}
 .headerContent{
     width: 90%;
     padding-left: 2vw;
@@ -95,13 +110,14 @@ header{
     margin: 0 0 50px 0;
 }
 .headerButtons a{
-    padding: 12px 11%;
     border-radius: 5px;
+    border-top: 1.5px solid rgb(113, 129, 255);
+    border-left: 1.5px solid rgb(113, 129, 255);
     color: rgb(255 255 255);
     text-decoration: none;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    box-shadow: inset 1px 1px 7px rgb(1 30 254), 4px 4px 7px 1px rgb(176 0 0);
+    box-shadow: inset 1px 1px 7px rgb(31, 47, 172), 4px 4px 7px 1px rgb(176 0 0);
     text-shadow: 3px 2px 2px rgb(0 38 211), 4px 3px 2px rgb(255 0 0);
     -webkit-text-stroke: 0.3px #1400ff;
 }
@@ -147,12 +163,13 @@ main{
     text-align: center;
     color: #fff;
     margin:50px 0 10px;
+    text-shadow: 2px 3px 2px rgb(0 47 255), 5px 6px 3px rgb(231, 11, 11);
 }
 .aboutMe hr{
     width: 90%;
     margin: 0 auto 13px;
     color: #fff;
-    box-shadow: 0px 2px 4px 2px #fff;;
+    box-shadow: 0px 2px 4px 2px #fff;
 }
 /*iconos lenguajes*/
 .containerKnowledgeIcons{
@@ -162,7 +179,7 @@ main{
 }.containerKnowledgeIcons svg{
     color: #fff;
     text-align: center;
-    height: 50px;
+    height: 60px;
     width: 100%;
 }#svgHTML{
     fill: red;
@@ -195,11 +212,11 @@ main{
 }
 /**********************************/
 .button{
-	padding: 1.5em 3em;
+	padding: 1.3em 2em;
 	border: 0;
 	background: transparent;
 	color: #e55743;
-	letter-spacing: .25em;
+	letter-spacing: .20em;
 	border: 2px solid #e55743;
 }.button:hover{
     background: rgb(180, 7, 7);
@@ -266,18 +283,20 @@ main{
 .modal-body{
     padding: 5px;
 }
+/***********************************************/
+#skew-myWork-contact{
+    border-color: #000 transparent transparent transparent;
+}
 
 /**************************************************contacto*********************************/
 #contact{
-    background-color: #bcbbbb;
-    padding: 20px 0;
+    background-color: #010b00;
+    padding: 15vh 0 7vh;
 }
 .contactContainer{
-    border-radius: 20px;
     width: 90%;
     margin: 0 auto;
-    background-color: #000;
-    border-radius: 20px 20px 0 0;
+    background-color: #000000;
 }
 
 /*formulario*/
@@ -338,8 +357,6 @@ main{
 }
 /*seccion de mis datos de contacto*/
 .formMyInfo{
-    background-color: #000;
-    border-radius: 20px;
     padding: 17px;
 }
 .formMyInfoContent{
@@ -361,7 +378,8 @@ main{
 }
 .formMyInfoContent p{
     display: inline-block;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500;
     text-align: center;
     width: 100%;
     color: #fff;
@@ -450,9 +468,6 @@ main{
     .headerButtons{
         justify-content: space-between;
     }
-    .aboutMe .aboutMeMain p{
-        text-align: center;
-    }
     .containerKnowledgeIcons{
         width: 70%;
     }
@@ -474,17 +489,19 @@ main{
     .contactContainer{
         width: 90%;
     }
-    .form{
-        grid-template-columns: 2fr 1fr;
-    }
     #a-MAIL p{
         font-size: 11px;
     }
     .formMyInfoContent{
         height: 100%;
+
     }
     .formMyInfoITEM{
         margin: 5px auto;
+        width: 65%;
+    }
+    .formMyInfoContent p{
+        font-size: 15px;
     }
 }
 @media (min-width:900px){
@@ -509,14 +526,57 @@ main{
     .contactContainer{
         width: 85%;
     }
+    .form{
+        grid-template-columns: 2fr 1fr;
+    }
+    .formMyInfoContent{
+        border-left: 1px solid #fff;
+        padding-top: 35px;
+    }
+    .formMyInfoITEM{
+        width: 90%;
+    }
 }
 @media (min-width:1200px){
     .headerContent{
         width: 38%;
         margin: 0 auto 75px 250px;
     }
-    .aboutMe .aboutMeHead img{
+    .headerContent h1{
+        font-size: 70px;
+    }.headerText p{
+        font-size: 25px;
+    }.headerButtons a{
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    /**about me**/
+    .aboutMe .aboutMeHead h2,
+    .containerContent h2{
+        font-size: 50px;
+    }.aboutMe .aboutMeHead img{
         height: 100px;
         width: 100px;
+    }.containerContent p,
+    .containerContent .aboutMeMain p{
+        font-size: 20px;
+    }.aboutMeMisConocimientos h3,
+    .aboutMeCertificados h3{
+        font-size: 35px;
+        letter-spacing: 2px;
+    }
+    /*gallery certificados*/
+    #gallery-certificados .container-lg .row .col img{
+        width: 70%;
+    }
+    /**/
+    .containerKnowledgeIcons{
+        width: 65%;
+    }.containerKnowledgeIcons svg{
+        height: 80px;
+        width: 100%;
+    }.containerKnowledgeIcons-p{
+        font-size: 13px !important;
+        padding-top: 8px;
     }
 }
