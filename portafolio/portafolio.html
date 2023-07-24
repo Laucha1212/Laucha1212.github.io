@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="desarrollador, diseñador, web, programador, html, css, js, python">
+    <title>Lautaro Perez | Portafolio</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="portafolio.css"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&family=Moirai+One&family=Oxygen:wght@300&family=Roboto+Slab&family=Rock+3D&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="effectOpacity">
+            <div class="headerContent">
+                <div class="headerText">
+                    <h1>LAUTARO<br>PEREZ</h1>
+                    <p> Explorá mi portafolio y descubrí cómo puedo transformar tu idea en sitios web modernos y funcionales. Desde diseños hasta en una navegación fluida y óptima</p>
+                </div>
+                <div class="headerButtons">
+                    <a href="#work" class="headerButtonWork">Trabajos</a>
+                    <a href="#contact" class="headerButtonContact">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="skew-abajo"></div>
+
+        <section class="aboutMe">
+            <div class="containerContent">
+                <div class="aboutMeHead">
+                    <h2>SOBRE MI</h2>
+                    <img src="./images/yoPeritoMoreno.jpg">
+                </div>
+                <div class="aboutMeMain">
+                    <p>
+                        Soy un desarrollador web con experiencia en la creación de sitios atractivos y funcionales.
+                    </p>
+
+                    <div class="aboutMeContainerButton">
+                        <button class="button" id="buttonAboutMe" onclick="mostrarTexto()">
+                            SEGUIR LEYENDO
+                        </button>
+                    </div>
+
+                    <div id="desplegable" class="oculto">
+                        <p>
+                            Mi enfoque principal es crear experiencias digitales que sean intuitivas, atractivas y eficientes.<br>
+                            Mi capacidad para traducir diseños en código funcional me permite ofrecer soluciones personalizadas y adaptadas a las necesidades de mis clientes.<br>
+                            Siempre me esfuerzo por mantenerme actualizado con las últimas tendencias y tecnologías en el mundo del desarrollo web, para asegurarme de brindar resultados modernos y de calidad.<br>
+                        </p>
+                    </div>
+
+                    <div class="aboutMeMisConocimientos">
+                        <h3>MIS CONOCIMIENTOS</h3>
+                        <hr>
+                        <div class="containerKnowledgeIcons">
+                            <div class="containerKnowledgeIcons-HTML">
+                                <svg id="svgHTML" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><style></style><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg>
+                                <p class="containerKnowledgeIcons-p">HTML</p>
+                            </div>
+                            <div class="containerKnowledgeIcons-CSS">
+                                <svg id="svgCSS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><style></style><path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"/></svg>
+                                <p class="containerKnowledgeIcons-p">CSS</p>
+                            </div>
+                            <div class="containerKnowledgeIcons-JS">
+                                <svg id="svgJS" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
+                                <p class="containerKnowledgeIcons-p">JS</p>
+                            </div>
+                            <div class="containerKnowledgeIcons-PYTHON">
+                                <svg id="svgPY" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/></svg>
+                                <p class="containerKnowledgeIcons-p">PYTHON</p>
+                            </div>
+                            <div class="containerKnowledgeIcons-SQL">
+                                <svg id="svgSQL" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"/></svg>
+                                <p class="containerKnowledgeIcons-p">SQL</p>
+                            </div>
+                            <div class="containerKnowledgeIcons-GIT">
+                                <svg id="svgGIT" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+                                <p class="containerKnowledgeIcons-p">GIT</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="aboutMeCertificados">
+                        <h3>CERTIFICADOS</h3>
+                        <hr>
+                        <div class="gallery">
+                            <div class="container-lg">
+                                <div class="row gy-4 row-cols-2 row-cols-sm-2 row-cols-md-2">
+                                    <div class="col">
+                                        <img src="../certificados/formato img/Certificado-Introducción-a-Bases-de-Datos-y-SQL-EducaciónIT.jpeg" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                    </div>
+                                    <div class="col">
+                                        <img src="../certificados/formato img/Certificado-Javascript-desde-cero-EducaciónIT.jpeg" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                    </div>
+                                    <div class="col">
+                                        <img src="../certificados/formato img/Certificado-Python-para-no-programadores-EducaciónIT.jpeg" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                    </div>
+                                    <div class="col">
+                                        <img src="../certificados/formato img/Certificado-Python-Programming-EducaciónIT.jpeg" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+        <div class="skew-arriba"></div>
+
+        <section class="myWork" id="work">
+            <div class="containerContent">
+                <h2>MIS TRABAJOS</h2>
+                <p>A lo largo de mi carrera, he creado una variedad de proyectos que demuestran mis habilidades y experiencia en HTML, CSS, JS, Python y SQL. Estos proyectos incluyen sitios web interactivos, aplicaciones personalizadas y soluciones de comercio electrónico.</p>
+            </div>
+
+                <div class="myWorkImgs">
+                    <!--BOOTSTRAP MODAL GALLERY-->
+                    <div class="gallery min-vh-100">
+                        <div class="container-lg">
+                            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                                <div class="col">
+                                    <img src="images/mts mywork.jfif" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                </div>
+                                <div class="col">
+                                    <img src="images/mts2 mywork.jfif" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                </div>
+                                <div class="col">
+                                    <img src="images/ryj mywork.jfif" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                </div>
+                                <div class="col">
+                                    <img src="images/mts2 mywork.jfif" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                </div>
+                                <div class="col">
+                                    <img src="images/mts mywork.jfif" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                </div>
+                                <div class="col">
+                                    <img src="images/ryj mywork.jfif" class="gallery-item" loading="lazy" alt="Trabajo realizado por Lautaro Perez">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+<!-- Modal abierto-->
+<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="#" class="modal-img" alt="">
+            </div>
+            <!--<div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+        <section id="contact">
+            <div class="contactContainer">
+                <div class="form">
+                    <div class="formContact">
+                        <div class="formContactContent">
+                            <form action="formulario.php" method="POST"  id="furmulario">
+                                <label for="name">Nombre completo</label><br>
+                                <input type="text" maxlength="30" id="name" required>
+                                    <br>
+                                <label for="mail">Correo electrónico</label><br>
+                                <input type="email" maxlength="50" id="mail" required>
+                                    <br>
+                                <label for="cellNumber">Teléfono celular</label><br>
+                                <input type="number" id="cellNumber" required>
+                                    <br><br>
+                                <label for="message">Mensaje:</label>
+                                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                <button onclick="" id="sendForm">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="formMyInfo">
+                        <div class="formMyInfoContent">
+                            <a id="a-MAIL" target="_blank" href="mailto:lautaroperezga@gmail.com? Subject=contacto%20desde%20portafolio" class="formMyInfoITEM">
+                                <svg id="svgMAIL" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                                <p>Lautaroperezga@gmail.com</p>
+                            </a><br>
+                            <a id="a-WSP" target="_blank" href="https://wa.me/91168155673 " class="formMyInfoITEM">
+                                <svg id="svgWSP" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                                <p>(+54) 9 11 6815 5673</p>
+                            </a><br>
+                            <a id="a-GITHUB" target="_blank" href="https://github.com/Laucha1212" class="formMyInfoITEM">
+                                <svg id="svgGITHUB" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                                <p>Github: Laucha1212</p>
+                            </a><br>
+                            <a id="a-LINKEDIN" target="_blank" href="https://www.linkedin.com/in/lautaroperez/" class="formMyInfoITEM">
+                                <svg id="svgLINKEDIN" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                                <p>linkedin: Lautaroperez</p>
+                            </a><br>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+    </footer>
+
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+</html>
