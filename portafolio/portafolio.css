@@ -26,6 +26,7 @@ body{
     bottom: 10vh;
     left: 0;
     width: 100%;
+    margin: 0 0 1px 0;
     border-width: 0 0 10vh 100vw;
     border-style: solid;
     border-color: transparent transparent rgb(11 12 12) transparent;
@@ -35,6 +36,7 @@ body{
     top: 10vh;
     left: 0;
     width: 100%;
+    margin: 1px 0 0 0;
     border-width: 10vh 100vw 0 0;
     border-style: solid;
     border-color: rgb(11 12 12) transparent transparent transparent;
@@ -64,7 +66,7 @@ header{
 .effectOpacity{
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.86);
+    background-color: rgba(0, 0, 0, 0.93);
     display: flex;
     justify-content: center;
     align-items: end;
@@ -83,13 +85,14 @@ header{
     width: 90%;
     padding-left: 2vw;
     color: #fff;
-    margin: 0 auto 75px;
+    padding:  0 0 10% 0;
 }
 .headerText h1{
     font-family: 'Moirai One', cursive;
     font-weight: 600;
-    font-size: 45px;
-    text-shadow: 7px 6px 4px rgb(255, 0, 0), 3px 4px 2px rgb(11 63 231);
+    /*font-size: 45px;*/
+    font-size: 3rem;
+    text-shadow: 4px 4px 0px rgb(0 47 255), 6px 6px 5px rgb(255, 0, 0);
     letter-spacing: 1px;
     /*color: #0044ff;*/
     color: #6d7bff;
@@ -105,11 +108,13 @@ header{
 }
 .headerButtons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     padding-top: 12px;
-    margin: 0 0 50px 0;
+    margin: 0 auto 50px auto;
 }
 .headerButtons a{
+    width: 40%; /*responsive*/
     border-radius: 5px;
     border-top: 1.5px solid rgb(113, 129, 255);
     border-left: 1.5px solid rgb(113, 129, 255);
@@ -152,9 +157,13 @@ main{
     margin: 0 auto 50px;
     color: #fff;
     font-size: 16px;
+    text-align: center;
     margin-bottom: 20px;
     font-family: 'Oxygen', sans-serif;
     font-weight: bold;
+}
+.aboutMe .aboutMeMain .desplegable-p{
+    text-align: left;
 }
 .aboutMe .aboutMeMain .aboutMeMisConocimientos{
     width: auto;
@@ -163,7 +172,7 @@ main{
     text-align: center;
     color: #fff;
     margin:50px 0 10px;
-    text-shadow: 2px 3px 2px rgb(0 47 255), 5px 6px 3px rgb(231, 11, 11);
+    text-shadow: 2px 3px 2px rgb(0 47 255), 6px 6px 3px rgb(231, 11, 11);
 }
 .aboutMe hr{
     width: 90%;
@@ -173,36 +182,37 @@ main{
 }
 /*iconos lenguajes*/
 .containerKnowledgeIcons{
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }.containerKnowledgeIcons svg{
-    color: #fff;
-    text-align: center;
-    height: 60px;
-    width: 100%;
+    height: 70px;
+    width: 100%; /*no cambiar en ajuste responsive*/
 }#svgHTML{
-    fill: red;
-    filter:drop-shadow(2px 3px 2px #0033ff);
+    fill: rgb(255, 0, 0);
+    filter:drop-shadow(2px 3px 4px #0033ff);
 }#svgCSS{
-    fill: blue;
-    filter:drop-shadow(2px 3px 2px #ff0000);
+    fill: rgb(0, 0, 255);
+    filter:drop-shadow(2px 3px 4px #ff0000);
 }#svgJS{
-    fill: yellow;
-    filter:drop-shadow(2px 3px 2px #0033ff);
+    fill: rgb(255, 255, 0);
+    filter:drop-shadow(2px 3px 4px #0033ff);
 }#svgPY{
-    fill: violet;
-    filter:drop-shadow(2px 3px 2px #0033ff);
+    fill: rgb(170, 0, 255);
+    filter:drop-shadow(2px 3px 4px #0033ff);
 }#svgSQL{
-    fill: white;
-    filter:drop-shadow(2px 3px 2px #ff0000);
+    fill: #fff;
+    filter:drop-shadow(2px 3px 4px #ff0000);
 }#svgGIT{
-    fill: orange;
-    filter:drop-shadow(2px 3px 2px #0033ff);
+    fill: rgb(255, 130, 0);
+    filter:drop-shadow(2px 3px 4px #0033ff);
 }
     
 .containerKnowledgeIcons-p{
-    font-size: 10px !important;
+    font-size: 10px;
+    font-family: 'Oxygen', sans-serif;
+    padding: 5px;
     text-align: center;
 }
 /********************/
@@ -231,7 +241,7 @@ main{
 }
 .myWork h2{
     text-align: center;
-    padding-top: 80px;
+    padding-top: 100px;
     color: #Fff;
     font-family: 'Moirai One', cursive;
     font-size: 30px;
@@ -368,7 +378,7 @@ main{
 .formMyInfoITEM{
     display: flex;
     align-items: center;
-    padding: 13px;
+    padding: 18px 13px;
     border-radius: 8px;
     border: 1px solid rgb(255, 255, 255);
     background-color: #000;
@@ -383,6 +393,7 @@ main{
     text-align: center;
     width: 100%;
     color: #fff;
+    margin: 0;
 }
 
 /*iconos de botones de contacto*/
@@ -414,169 +425,3 @@ main{
 
 
 /***********************************RESPONSIVE***************************************/
-@media (min-width:360px){
-    .headerContent{
-        padding-left: 6vw;
-        margin: 0 auto 90px;
-    }
-    .headerButtons{
-        justify-content: space-evenly;
-        width: 100%;
-    }.headerButtons a{
-        width: 45%;
-    }
-}
-@media (min-width:400px){
-    .containerContent{
-        width: 90%;
-    }
-    .containerKnowledgeIcons svg{
-        height: 60px;
-    }
-}
-@media (min-width:500px){
-    .containerKnowledgeIcons{
-        width: 80%;
-        margin: 0 auto;
-    }
-    .headerContent{
-        width: 80%;
-    }
-    .contactContainer{
-        width: 80%;
-    }
-}
-@media (min-width:570px) {
-    .headerContent{
-        width: 75%;
-    }
-    .headerText p{
-        margin: 10px 0;
-    }
-}
-@media (min-width:700px) {
-    .headerContent{
-        width: 50%;
-        padding-left: 0vw;
-    }
-    .headerText p{
-        margin: 10px 0;
-    }
-    .headerText p{
-        margin: 15px 0;
-    }
-    .headerButtons{
-        justify-content: space-between;
-    }
-    .containerKnowledgeIcons{
-        width: 70%;
-    }
-    .contactContainer{
-        width: 70%;
-    }
-}
-@media (min-width:800px){
-    .headerContent{
-        width: 50%;
-    }
-    .containerContent{
-        width: 75%;
-    }
-    .aboutMe .aboutMeHead img{
-        height: 80px;
-        width: 80px;
-    }
-    .contactContainer{
-        width: 90%;
-    }
-    #a-MAIL p{
-        font-size: 11px;
-    }
-    .formMyInfoContent{
-        height: 100%;
-
-    }
-    .formMyInfoITEM{
-        margin: 5px auto;
-        width: 65%;
-    }
-    .formMyInfoContent p{
-        font-size: 15px;
-    }
-}
-@media (min-width:900px){
-    .headerContent{
-        margin: 0 auto 75px 150px;
-    }
-    .effectOpacity{
-        justify-content: left;
-    }
-    .containerKnowledgeIcons{
-        width: 70%;
-    }
-    .containerKnowledgeIcons svg{
-        height: 75px;
-    }
-}
-@media (min-width:1050px){
-    .headerContent{
-        width: 40%;
-        margin: 0 auto 75px 200px;
-    }
-    .contactContainer{
-        width: 85%;
-    }
-    .form{
-        grid-template-columns: 2fr 1fr;
-    }
-    .formMyInfoContent{
-        border-left: 1px solid #fff;
-        padding-top: 35px;
-    }
-    .formMyInfoITEM{
-        width: 90%;
-    }
-}
-@media (min-width:1200px){
-    .headerContent{
-        width: 38%;
-        margin: 0 auto 75px 250px;
-    }
-    .headerContent h1{
-        font-size: 70px;
-    }.headerText p{
-        font-size: 25px;
-    }.headerButtons a{
-        font-size: 20px;
-        letter-spacing: 3px;
-    }
-    /**about me**/
-    .aboutMe .aboutMeHead h2,
-    .containerContent h2{
-        font-size: 50px;
-    }.aboutMe .aboutMeHead img{
-        height: 100px;
-        width: 100px;
-    }.containerContent p,
-    .containerContent .aboutMeMain p{
-        font-size: 20px;
-    }.aboutMeMisConocimientos h3,
-    .aboutMeCertificados h3{
-        font-size: 35px;
-        letter-spacing: 2px;
-    }
-    /*gallery certificados*/
-    #gallery-certificados .container-lg .row .col img{
-        width: 70%;
-    }
-    /**/
-    .containerKnowledgeIcons{
-        width: 65%;
-    }.containerKnowledgeIcons svg{
-        height: 80px;
-        width: 100%;
-    }.containerKnowledgeIcons-p{
-        font-size: 13px !important;
-        padding-top: 8px;
-    }
-}

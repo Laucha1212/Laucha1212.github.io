@@ -1,0 +1,259 @@
+/***********************************RESPONSIVE***************************************/
+
+@media (min-width:400px) and (min-height:700px){
+    .headerContent{
+        padding-bottom: 30% !important; 
+    }
+    .headerText p{
+        margin: 10px 0;
+    }
+    .headerText h1{
+        font-size: 4rem !important;
+    }
+    /**/
+    .containerKnowledgeIcons-p{
+        font-size: 13px !important;
+    }
+}
+
+/**********************************************/
+
+@media (min-height:800px){
+    .headerContent{
+        padding-bottom: 35% !important; 
+    }
+}
+
+/**********************************************/
+
+@media (min-width:500px) and (min-height:900px){
+    .headerContent{
+        padding-bottom: 50% !important; 
+        width: 70% !important;
+    }
+    /**/
+    .containerKnowledgeIcons{
+        margin: 0 auto;
+    }
+    .containerKnowledgeIcons svg{
+        height: 90px !important;
+        margin: 0 auto;
+    }
+    .containerKnowledgeIcons-p{
+        font-size: 20px !important;
+    }
+    /**/
+    .myWork h2{
+        padding-top: 130px !important;
+    }
+}
+
+/**********************************************/
+
+@media (min-width:700px) {
+    .headerText p{
+        font-size: 25px !important;
+    }
+    /**/
+    .aboutMe .aboutMeMain p,
+    .containerContent p{
+        font-size: 25px !important;
+        line-height: 30px !important;
+    }
+    .aboutMe .aboutMeHead h2,
+    .containerContent h2{
+        font-size: 60px !important;
+        letter-spacing: 2px;
+    }
+    .aboutMe .aboutMeMain h3{
+        font-size: 50px;
+    }
+    /**/
+    .containerKnowledgeIcons{
+        width: 70%;
+    }
+    /**/
+    .formMyInfoITEM{
+        margin: 5px auto;
+        width: 65%;
+    }
+}
+
+/**********************************************/
+
+@media (min-width:800px){
+    .aboutMe .aboutMeHead img{
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+}
+
+/**********************************************/
+
+@media (min-height:1200px){
+    .headerContent{
+        padding-bottom: 30% !important;
+        font-size: 25px !important;
+    }.headerContent .headerText p{
+        font-size: 40px !important; 
+        line-height: 40px !important;
+    }
+    
+    .headerButtons a{
+        width: 48% !important;
+    }.effectOpacityButtons{
+        padding: 15px !important;
+    }
+    /**/
+    .myWork h2{
+        padding-top: 150px !important;
+    }
+    /**/
+    .myWork .containerContent p,
+    .containerContent .aboutMeMain p{
+        font-size: 40px !important;
+        line-height: 50px !important;
+    }
+}
+
+/**********************************************/
+
+@media (min-width:1000px){
+    .contactContainer{
+        width: 95% !important;
+    }
+    .form{
+        grid-template-columns: 2fr 1fr !important;
+    }
+    .formMyInfoContent{
+        border-left: 1px solid #fff !important;
+        padding-top: 35px !important;
+    }
+    .formMyInfoITEM{
+        width: 90% !important;
+    }
+}
+
+/**********************************************/
+
+@media (min-height:1700px){
+    .headerButtons a{
+        width: 48% !important;
+        font-size: 33px;
+    }.effectOpacityButtons{
+        padding: 20px !important;
+    }
+    /**/
+    .myWork h2{
+        padding-top: 210px !important;
+    }
+}
+
+/**********************************************/
+
+
+/*1080x2400 píxeles: Tamaño de pantalla de algunos teléfonos Android de gama media y alta.*/
+@media (min-width:1000px) and (min-height:1900px){
+    .headerContent{
+        padding-bottom: 50% !important;
+    }.headerContent .headerText h1{
+        font-size: 9rem !important;
+    }.headerContent .headerText p{
+        font-size: 60px !important; 
+        line-height: 60px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .headerButtons a{
+        width: 48% !important;
+    }.effectOpacityButtons{
+        padding: 30px !important;
+    }
+    /**/
+    .containerContent{
+        width: 90% !important;
+    }
+    .aboutMe .aboutMeHead h2,
+    .containerContent h2{
+        font-size: 100px !important;
+    }
+    .aboutMe .aboutMeMain h3{
+        font-size: 70px !important;
+    }
+    .myWork .containerContent p,
+    .containerContent .aboutMeMain p{
+        font-size: 43px !important;
+        line-height: 50px !important;
+    }.containerKnowledgeIcons svg{
+        height: 140px !important;
+    }
+}
+
+/**********************************************/
+
+@media (min-height:2400px){
+    .headerButtons a{
+        width: 48% !important;
+    }.effectOpacityButtons{
+        padding: 40px !important;
+    }
+    /**/
+    .myWork h2{
+        padding-top: 300px !important;
+    }
+    
+}
+
+/**********************************************/
+
+@media (min-width:1200px){
+    /**about me**/
+    .aboutMe .aboutMeHead h2,
+    .containerContent h2{
+        font-size: 50px;
+    }.aboutMe .aboutMeHead img{
+        height: 100px;
+        width: 100px;
+    }.containerContent p,
+    .containerContent .aboutMeMain p{
+        font-size: 20px;
+    }
+    /*gallery certificados*/
+    #gallery-certificados .container-lg .row .col img{
+        width: 70%;
+    }
+    /**/
+    .containerKnowledgeIcons{
+        width: 65%;
+    }.containerKnowledgeIcons svg{
+        height: 80px;
+        width: 100%;
+    }.containerKnowledgeIcons-p{
+        font-size: 13px !important;
+        padding-top: 8px;
+    }
+}
+
+/**********************************************/
+
+@media (min-width:1400px) and (min: height 3200px){
+    .headerText h1{
+        font-size: 11rem !important;
+    }
+}
+
+/****************COMPUTADORAS*************/
+
+@media (min-width:1000px){
+    .headerContent{
+        width: 50% !important;
+        padding-left: 0 !important;
+        left: 0;
+    }.headerText h1{
+        font-size: 5rem !important;
+    }
+    .containerKnowledgeIcons svg{
+        height: 85px !important;
+    }
+}
