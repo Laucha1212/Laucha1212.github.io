@@ -184,9 +184,9 @@ main{
 .containerKnowledgeIcons{
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-}.containerKnowledgeIcons svg{
+}.containerKnowledgeIcons svg,.containerKnowledgeIcons img{
     height: 70px;
     width: 100%; /*no cambiar en ajuste responsive*/
 }#svgHTML{
@@ -208,6 +208,14 @@ main{
     fill: rgb(255, 130, 0);
     filter:drop-shadow(2px 3px 4px #0033ff);
 }
+#svgREACT{
+    fill: rgb(56, 110, 228);
+    filter:drop-shadow(2px 3px 4px #ffbb00);
+}
+/* #svgDJANGO{
+    fill: rgb(255, 130, 0);
+    filter:drop-shadow(2px 3px 4px #0033ff);
+} */
     
 .containerKnowledgeIcons-p{
     font-size: 10px;
